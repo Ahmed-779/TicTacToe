@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <input type="text" id="playerX" placeholder="Player X name" class="player-name top-left">
+    <input type="text" id="playerO" placeholder="Player O name" class="player-name top-right">
+
+    <table id="board">
+        <tr>
+            <td onclick="makeMove(0)"></td>
+            <td onclick="makeMove(1)"></td>
+            <td onclick="makeMove(2)"></td>
+        </tr>
+        <tr>
+            <td onclick="makeMove(3)"></td>
+            <td onclick="makeMove(4)"></td>
+            <td onclick="makeMove(5)"></td>
+        </tr>
+        <tr>
+            <td onclick="makeMove(6)"></td>
+            <td onclick="makeMove(7)"></td>
+            <td onclick="makeMove(8)"></td>
+        </tr>
+    </table>
+    <button onclick="resetBoard()" id="reset">Reset</button>
+
+	<div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="close" class="close">&times;</span>
+        <p id="announcement"></p>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
